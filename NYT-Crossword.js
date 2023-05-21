@@ -1,4 +1,4 @@
-javascript: var split = window.location.href.split("/");
+javascript: var split = location.href.split("/");
 fetch("https://www.nytimes.com/svc/crosswords/v6/puzzle/daily/" + split.slice(split.length - 3).join("-") + ".json")
     .then(response => response.text())
     .then(x => {
@@ -7,5 +7,5 @@ fetch("https://www.nytimes.com/svc/crosswords/v6/puzzle/daily/" + split.slice(sp
         letters = JSON.parse(x.slice(x.indexOf("s\":") + 3, x.indexOf("}]") + 2)).map(y => y["answer"]);
     })
     .then(() => {
-        for (var x in hintplacement) hints[x].innerHTML = hintplacement[x].map(y => letters[y]).join("");
+        for (let x in hintplacement) hints[x].innerHTML = hintplacement[x].map(y => letters[y]).join("");
     });
