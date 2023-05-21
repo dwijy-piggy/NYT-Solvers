@@ -1,1 +1,1 @@
-javascript:document.getElementsByClassName("sb-wordlist-items-pag single")[0].appendChild(document.createTextNode("Answers: " + window.gameData.today.answers.sort((a, b) => a.length < b.length ? 1:-1).join(", ")));
+javascript:document.getElementsByClassName("sb-wordlist-items-pag single")[0].appendChild(document.createTextNode("Answers: " + gameData.today.answers.sort((a, b) => a.length < b.length ? 1:-1).join(", ")));
