@@ -6,6 +6,5 @@ fetch("https://www.nytimes.com/games/prototype/connections/dist/index.15c9846b.j
     let o = eval(r.slice(r.indexOf("var F")+6, r.indexOf("]}]")+3)).map(y => [y, y["startingGroups"][0].concat(...y["startingGroups"].slice(1))]).find(y => eq(y[1], arr))[0]["groups"];
     p = document.createElement('pre');
     for(let x of Object.keys(o)) p.textContent += (`${x}: ${o[x]["members"].join(', ')}\n`);
-    console.log(p);
     document.body.appendChild(p);
 });
