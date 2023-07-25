@@ -1,5 +1,5 @@
-# NYT-cheats
-This repository contains cheats for some games on the New York Times website. 
+# NYT-Solvers
+This repository contains solvers for some games on the New York Times website. 
 
 Instructions for using scripts:
 
