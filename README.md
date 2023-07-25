@@ -11,6 +11,6 @@ Instructions for using scripts:
 
 If you are on a computer, you can also paste these scripts directly into the console in your browser's developer tools
 
-The cheats in the folder titled "Automated" automatically input the answers for you
+The solvers in the folder titled "Automated" automatically input the answers for you
 
-The cheats in the folder titled "Other" represent the answers as text somewhere on the page, and you must input them manually
+The solvers in the folder titled "Other" represent the answers as text somewhere on the page, and you must input them manually
